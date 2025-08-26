@@ -11,6 +11,7 @@ module "aft" {
   tf_backend_secondary_region = var.tf_backend_secondary_region
 
   vcs_provider                                  = "github"
+  vcs_connection_arn = "arn:aws:codeconnections:ap-south-1:315922615556:connection/bca6bdc7-e8e4-4d5b-ac4f-3549b457d468"
   account_request_repo_name                     = "${var.github_username}/learn-terraform-aft-account-request"
   account_provisioning_customizations_repo_name = "${var.github_username}/learn-terraform-aft-account-provisioning-customizations"
   global_customizations_repo_name               = "${var.github_username}/learn-terraform-aft-global-customizations"
